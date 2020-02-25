@@ -1,0 +1,71 @@
+*{  /*very basic browser default style reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex container (does not need to be body!) Just used in this example*/
+.flexbox
+{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+/*Flex Items. */
+.flex-item
+{
+    display: block;
+    width: 100%;
+    height: 460px;
+}
+
+.item-1
+{
+    background: #008000;
+}
+
+.item-2
+{
+    background: #4b5320;
+}
+
+.item-3
+{
+    background: #a4c639;
+}
+
+.item-4
+{
+    background: #87a96b;
+}
+
+.item-5
+{
+    background: #004225;
+}
+
+.item-6
+{
+    background: #7fff00;
+}
+/* Tablet device*/
+@media screen and (min-width: 768px)
+{
+    .item-2,
+    .item-3,
+    .item-5,
+    .item-6  {
+        width:50%;
+    }
+}
+
+/* Desktop device*/
+@media screen and (min-width: 1200px){
+.item-2,
+.item-3,
+.item-4
+{
+    width: 33.333%;
+}
+}
